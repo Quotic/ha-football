@@ -1,0 +1,35 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "MatchDay Data Setup",
+                "description": "Enter the required API-Football details for your club.",
+                "data": {
+                    "api_key": "API-Football Key",
+                    "team_id": "Team ID (e.g., 157 for Bayern Munich)",
+                    "league_id": "League ID",
+                    "season": "Season (e.g., 2023)"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication"
+        },
+        "abort": {
+            "already_configured": "Device is already configured"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "Polling Options",
+                "description": "Adjust how frequently MatchDay fetches data. Free tier allows 100 requests/day.",
+                "data": {
+                    "polling_interval": "Standard Update Interval (hours)",
+                    "live_polling_interval": "Live Match Update Interval (minutes)"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "MatchDay Daten",
+                "description": "Bitte die benötigten API-Football Details eintragen.",
+                "data": {
+                    "api_key": "API-Football Key",
+                    "team_id": "Team ID (z.B. 157 für FC Bayern)",
+                    "league_id": "Liga ID",
+                    "season": "Saison (z.B. 2023)"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "invalid_auth": "Ungültige Authentifizierung"
+        },
+        "abort": {
+            "already_configured": "Gerät ist bereits konfiguriert"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "Abruf-Optionen",
+                "description": "Anpassung der Abrufintervalle für MatchDay.",
+                "data": {
+                    "polling_interval": "Standard Abrufintervall (Stunden)",
+                    "live_polling_interval": "Live-Spiel Abrufintervall (Minuten)"
+                }
+            }
+        }
+    }
+}
